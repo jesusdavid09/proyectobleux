@@ -35,6 +35,10 @@ body {
 
 .nav-links .btn-primary {
   background-color: #6c63ff;
+  background: linear-gradient(to right, rgb(121, 71, 213), rgb(16,121,213));
+  background-size: cover;
+  webkit-background-clip: text;
+  webkit-text-fill-color: transparent;
   padding: 8px 16px;
   border-radius: 5px;
   color: white;
@@ -46,15 +50,16 @@ body {
   align-items: center;
   background-color: #2e2550;
   color: white;
-  padding: 80px 10%;
   height: 600px;
+  width: 970px;
   padding-bottom: 5px;
   padding-top: 1px;
-  justify-content: space-evenly;
+
 }
 
 .hero-content {
   flex: 1;
+  margin-left: 300px;
 }
 
 .hero-content h1 {
@@ -67,44 +72,51 @@ body {
   margin-bottom: 30px;
 }
 
-.hero-content .btn {
-  display: inline-block;
-  margin-right: 15px;
-  padding: 10px 20px;
-  border: 2px solid white;
+.hero-content .boton{
+  background-color: #2e2550;
+  width: 382px;
+  border: 2px solid rgb(104, 104, 104);
   border-radius: 5px;
-  color: white;
-  text-decoration: none;
-  transition: 0.3s ease;
-  background-color: transparent;
+
 }
 
-.hero-content .btn:hover{
-  background-color: #301d6e;
+.hero-content button{
+margin: 5px;
+width: 150px;
+height: 60px;
+border: 2px solid white;
+cursor: pointer;
+border-radius: 5px;
+color: #ffffff;
+background-color: #2e2550;
+
 }
 
-.hero-content .btn-secondary {
+.hero-content .boton1{
+  width: 200px;
+  height: 60px;
   background-color: #ffffff;
-  color:#f72585;
-  border: none;
-  border: 2px solid white;
+  color: #ff07b5;
+
 }
 
-.hero-content .btn-secondary:hover {
-  background-color: #fff;
-  color: #f72585;
+.hero-content .btn {
+  display: flex;
+  margin-right: 15px;
+  color: rgb(189, 35, 35);
 }
 
 .hero-image .img {
-  width: 890px;
-  height: 599px;
-  position: relative;
-  left:435px;
-  top:1px;
-  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  width: 939px;
+  height: 600px;
+  margin-top: 29px;
+  margin-left: 284px;
 }
 .hero-image .img1 {
-  position: relative;
+  margin-top: -500px;
+  margin-left: 550px;
   right: 180px;
   width: 240px;
   margin-bottom: 50px;
@@ -124,15 +136,14 @@ body {
 }
 
 .feature-item h3 {
-  color: #b00e57;
+  color: #d3377d;
   margin-bottom: 15px;
   font-size: 50px;
 }
 
 .feature-item{
-  position: relative;
-  bottom: 350px;
-  left: 400px;
+  margin-top: -450px;
+  margin-left: 250px;
 }
 
 .feature-item p {
@@ -149,21 +160,30 @@ body {
   margin-left: 560px;
 }
 
-.feature-item ul li {
+.feature-item ul{
   margin-bottom: 5px;
   color: #555;
+}
+
+.l1{
+  color: #f72585;
+}
+
+.a{
+  color: #f72585;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 .img2{
   margin-right: 800px;
   width: 700px;
-  position: relative;
   top: 50px;
   left: 30px;
 }
 
 .pricing {
-  background-color: #1f103f;
+  background-color: #1e172f;
   color: white;
   padding: 60px 10%;
   text-align: center;
@@ -185,6 +205,10 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
+}
+
+.spanrosa{
+  color: #f72585;
 }
 
 .card {
@@ -233,27 +257,27 @@ body {
 }
 
 .card .btn-primary:hover{
-  background-color: #f72585;
+  background: linear-gradient(to right, rgb(236, 94, 167), rgb(243,33,140));
   color: white;
 
 }
 
 footer {
   background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
   color: #aaa;
-  text-align: center;
-  padding: 20px 10%;
-  right: 600px;
-  font-size: 20px;
-  position: relative;
+  align-items: center;
+  padding: 30px 8%;
+  font-size: 16px;
+  flex-wrap: wrap;
 }
 
 footer .social-icons img {
   width: 20px;
-  margin: 0 8px;
-  filter: invert(1);
-  position: relative;
-  left: 1100px;
-  bottom: 30px;
-  background-color: white;
+  justify-content: space-evenly;
+}
+
+.span{
+  color: #f72585;
 }
